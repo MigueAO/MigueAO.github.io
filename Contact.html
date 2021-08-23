@@ -6,53 +6,102 @@
         <title>Mi página web personal</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilopersonal.css">
     </head>
     <body>
-        <header>
-            <h1> MI CONTACTO </h1>
-            <nav>
-                <ol>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="About.html">Acerca de mí</a></li>
-                </ol>
-            </nav>
+        <header class="hero hcontact">
+            <div class="container">
+                <nav class="nav">
+                     <ul>
+                         <li><a href="index.html">INICIO</a></li>
+                         <li><a href="About.html">ACERCA DE MÍ</a></li>
+                         <li><a href="Contact.html">CONTÁCTAME</a></li>
+                     </ul>
+                </nav>
+                <section class="hero__container">
+                    <div class="hero__text">
+                        <h1 class="hero__title">CONTÁCTAME</h1>
+                    </div>
+                </section>
+            </div>
+            <div class="hero__wave" style="overflow: hidden;" >
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;">
+                    </path>
+                </svg>
+            </div>
         </header>
-        <section>
-            <hr>
-            <h2>Mis redes sociales</h2>
-            <table>
-                <tr>
-                    <td><img src="img/facebook.jpg" width="100" /></td>
-                    <td><p>Miguel Alayo Orozco</p></td>
-                </tr> 
-                <tr>
-                    <td><img src="img/whatsapp.png" width="100" /></td>
-                    <td><p>968 315 796</p></td>
-                </tr> 
-                <tr>
-                    <td><img src="img/outlook.jpg" width="100" /></td>
-                    <td><p>miguelalayo@outlook.com</p></td>
-                </tr> 
-                <tr>
-                    <td><img src="img/gmail.png" width="100" /></td>
-                    <td><p>miguelalayoo@gmail.com</p></td>
-                </tr> 
-             </table>
-        </section>
-        <section>
-            <hr>
-            <h3>Conctáctame</h3>
-            <form action="MAILTO:sugerencias@miempresa.com" method="post" enctype="text/plain">
-                Nombre:<br>
-                <input type="text" name="name" value="tu nombre"><br>
-                E-mail:<br>
-                <input type="text" name="mail" value="tu email"><br>
-                Sugerencia:<br>
-                <input type="text" name="comment" value="Tus sugerencias" size="50"><br><br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-            </form>
-        </section>
+
+        <main>
+            <section class="contact container">
+                <div class="contact__grid">
+                    <article class="contact__item">
+                        <div class="contact__it">
+                            <a href="https://www.facebook.com/miguel.alayoorozco"><img src="img/facebook.svg" width="90"></a>
+                            <div class="like_text">
+                                <h3 class="contact__name">Facebook</h3>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article class="contact__item">
+                        <div class="contact__it">
+                            <a href="http://wa.me/51968315796?text=Hola%20Migue"><img src="img/whatsapp.svg" width="90"></a>
+                            <div class="contact__text">
+                                <h3 class="contact__name">Whatsapp</h3>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article class="contact__item">
+                        <div class="contact__it">
+                            <a href=" mailto:miguelalayo@outlook.com"><img src="img/gmail.svg" width="90"></a>
+                            <div class="contact__text">
+                                <h3 class="contact__name">Gmail</h3>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="container">
+                <hr>
+                <h2 class="subtitle">Conctáctame</h2>
+                <form class="form" action="MAILTO:sugerencias@miempresa.com" method="post" enctype="text/plain">
+                    Nombre:<br>
+                    <input type="text" name="name" value="tu nombre"><br>
+                    E-mail:<br>
+                    <input type="text" name="mail" value="tu email"><br>
+                    Sugerencia:<br>
+                    <input type="text" name="comment" value="Tus sugerencias" size="50"><br><br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__grid">
+                    <p class="copy__footer">© Creado por Miguel Alayo</p>
+                    <section class="footer__contact">
+                        <h3 class="footer__title">Contáctame</h3>
+                        <div class="footer__icons">
+                            <span class="footer__container-icons">
+                                <a class="fab fa-facebook footer__icon" href="https://www.facebook.com/miguel.alayoorozco"></a>                       
+                             </span>
+                           
+                            <span class="footer__container-icons">
+                                <a class="fab fa-whatsapp footer__icon" href="http://wa.me/51968315796?text=Hola%20Migue"></a>
+                            </span>
+                           
+                            <span class="footer__container-icons">
+                                <a class="fab fa-google footer__icon" href=" mailto:miguelalayo@outlook.com"></a>
+                            </span>
+                        </div>
+                    </section>
+            </div>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/ac64455b97.js" crossorigin="anonymous"></script>
     </body>
 </html>

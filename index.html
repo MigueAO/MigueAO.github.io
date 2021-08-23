@@ -4,34 +4,74 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Mi página web personal</title>
+        <title>Mi página web personal</title>   
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilopersonal.css">
     </head>
+
     <body>
-        <header>
-            <h1> INICIO </h1>
-            <nav>
-                <ol>
-                    <li><a href="About.html">Acerca de mí</a></li>
-                    <li><a href="Contact.html">Mi contacto</a></li>
-                </ol>
-            </nav>
+        <header class="hero">
+            <div class="container">
+                <nav class="nav">
+                     <ul>
+                         <li><a href="index.html">INICIO</a></li>
+                         <li><a href="About.html">ACERCA DE MÍ</a></li>
+                         <li><a href="Contact.html">CONTÁCTAME</a></li>
+                     </ul>
+                </nav>
+                <section class="hero__container">
+                    <div class="hero__text">
+                        <h1 class="hero__title">Hola soy Miguel Alayo</h1>
+                        <h2 class="hero__subtitle">Bienvenido a mi página web personal</h2>
+                        <a href="Contact.html" class="hero__cta">Conctáctame ahora</a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="hero__wave" style="overflow: hidden;" >
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;">
+                    </path>
+                </svg>
+            </div>
         </header>
-        <section>
-            <h2>BIENVENIDO A MI PRIMER SITIO WEB</h2>
-            <table>
-                <tbody>
-                    <td><img src="img/migue1.jpeg" width="150" /></td>
-                    <td><p>  Hola, mi nombre es Miguel Angel Alayo Orozco, tengo 23 años. 
-                        Nací en la ciudad de Chiclayo pero actualmente resido en Cajamarca.
-                        Soy un chico proactivo, ordenado y extrovertido, una de mis principales 
-                        metas es hacer de mi país un lugar mejor, para ello una de mis herramientas 
-                        es mi carrera Ingeniería de Sistemas.</p></td>
-                    <td><img src="img/migue2.jpeg" width="150" /></td>
-                </tbody>
-             </table>
-        </section>
+        <main>
+            <section class="presentation container">
+                <img src="img/migue1.jpeg" alt="" class="presentation__picture">
+                <h2 class="subtitle">Mi nombre es: Miguel Alayo</h2>
+                <p class="presentation__copy">Tengo 23 años. Nací en la ciudad de Chiclayo 
+                    pero actualmente resido en Cajamarca. Soy un chico proactivo, ordenado 
+                    y extrovertido, una de mis principales metas es hacer de mi país 
+                    un lugar mejor, para ello una de mis herramientas es mi carrera Ingeniería de Sistemas.
+                </p>
+                <a href="About.html" class="presentation__cta">Más sobre mí</a>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__grid">
+                    <p class="copy__footer">© Creado por Miguel Alayo</p>
+                    <section class="footer__contact">
+                        <h3 class="footer__title">Contáctame</h3>
+                        <div class="footer__icons">
+                            <span class="footer__container-icons">
+                                <a class="fab fa-facebook footer__icon" href="https://www.facebook.com/miguel.alayoorozco"></a>                       
+                             </span>
+                           
+                            <span class="footer__container-icons">
+                                <a class="fab fa-whatsapp footer__icon" href="http://wa.me/51968315796?text=Hola%20Migue"></a>
+                            </span>
+                           
+                            <span class="footer__container-icons">
+                                <a class="fab fa-google footer__icon" href=" mailto:miguelalayo@outlook.com"></a>
+                            </span>
+                        </div>
+                    </section>
+            </div>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/ac64455b97.js" crossorigin="anonymous"></script>
     </body>
 </html>

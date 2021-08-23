@@ -6,68 +6,191 @@
         <title>Mi página web personal</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilopersonal.css">
     </head>
     <body>
-        <header>
-            <h1> ACERCA DE MÍ </h1>
-            <nav>
-                <ol>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="Contact.html">Mi contacto</a></li>
-                </ol>
-            </nav>
+        <header class="hero habout">
+            <div class="container">
+                <nav class="nav">
+                     <ul>
+                         <li><a href="index.html">INICIO</a></li>
+                         <li><a href="About.html">ACERCA DE MÍ</a></li>
+                         <li><a href="Contact.html">CONTÁCTAME</a></li>
+                     </ul>
+                </nav>
+                <section class="hero__container">
+                    <div class="hero__text">
+                        <h1 class="hero__title">ACERCA DE MÍ</h1>
+                    </div>
+                </section>
+            </div>
+            <div class="hero__wave" style="overflow: hidden;" >
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;">
+                    </path>
+                </svg>
+            </div>
         </header>
-        <section>
-            <hr>
-            <table>
-                <tr>
-                    <td><p>Desde pequeño me ha gustado trabajar por más pequeño o costoso que fuese el trabajo, 
-                        algunos ejemplos de estos son: Vender helados, asistente de ventas en tienda de indumentaria, 
-                        docente particular de matemáticas. Pero uno de los que más me gustaron y relacionados a mi carrera 
-                        fue trabajar en DIDEPTI, una empresa desarrolladora de software en la cual trabajé como tester, 
-                        algo pequeño pero muy satisfactorio.</p></td>
-                    <td><img src="img/didepti.png" width="100" /></td>
-                </tr>
-             </table>
-             <hr>
-            <table>
-                <tr>
-                    <td><img src="img/guitarra.jpeg" width="100" /></td>
-                    <td><p>Mis tiempos libres me gusta invertilos en la música, 
-                        me apasiona poder tocar la guitarra y cantar un poco</p></td>
-                </tr> 
-             </table>
-             <hr>
-             <table>
-                <tr>
-                    <td><p>Uno de los juegos que más practico en mis tiempos libres y entre amigos es el billar. 
-                        Un juego que practico desde mis años iniciales en la secundaria</p></td>
-                    <td><img src="img/billar.jpeg" width="100" /></td>
-                </tr>
-             </table>
-             <hr>
-             <table>
-                <tr>
-                    <td><img src="img/helado.jpeg" width="100" /></td>
-                    <td><p>Entre los postres que me gustan y que más compro cada vez que se me apetece algo pequeño, 
-                        son los helados y especialmente con gomitas de añadido.</p></td>
-                </tr>
-             </table> 
-             <hr>
-             <table>
-                <tr>
-                    <td><p>Entre las cosas que más me gusta hacer es la fotografía, que aunque 
-                        no soy muy profesional en ello me gustan el resultado que obtengo de algunas</p></td>
-                    <td>
-                        <img src="img/foto1.jpeg" width="100" />
-                        <img src="img/foto2.jpeg" width="100" />
-                        <img src="img/foto3.jpeg" width="100" />
-                        <img src="img/foto4.jpeg" width="100" />
-                        <img src="img/foto5.jpeg" width="100" />
-                    </td>
-                </tr>
-             </table>
-        </section>
+
+        <main>
+            <section class="about container">
+                <div class="abaout__text">
+                    <h2 class="subtitle">Mis habilidades</h2>
+                    <p class="about__paragraph">
+                        Soy un chico talentoso, un poco versátil pero con mucha habilidad para ciertas cosas. 
+                        A lo largo de mi vida he ido adquiriendo nuevas  capacidades y estas han sido 
+                        responsables del desarrollado de nuevas habilidades.
+                    </p>
+                    <p class="about__paragraph">
+                        Tengo un buen nivel de <b>autoconocimiento</b> puesto que con frecuencia suelo 
+                        <b>manejar mis emociones</b> y aún trabajo en ello; la <b>empatía</b>  y la 
+                        <b>comunicación acertiva</b> me han llevado a crear nuevas <b>relaciones interpersonales</b>, 
+                        a la vez que desarrollar mi <b>pensamiento crítico</b>.
+                    </p>
+                </div>
+               
+                <figure class="about__img"><img src="img/migue2.jpeg" class="about__picture"></figure>
+                <figure class="about__img about__img--left"><img src="img/proyecto.jpg" class="about__picture"></figure>
+               
+                <div class="abaout__text">
+                    <h2 class="subtitle">Mis Proyectos</h2>
+                    <p class="about__paragraph">
+                        También soy un chico soñador, alguien con muchas ideas y algunas de éstas innovadoras.
+                        Tratando de hacer realidad algunas de ellas he ido planeando proyectos que espero
+                        realizarlos todas con las herramientas necesarias.
+                    </p>
+                    <p class="about__paragraph">
+                        La mayoría de mis proyectos involucran mis habilidades y capacidades. Algunos son:
+                        <b>El desarrollo de una app</b> la cual estoy seguro que revolucionarán a los supermercados,
+                        <b>Iniciar una empresa</b> y sumergirme en el mundo de <b>la inversión</b>; pero sobre
+                        todo, mi mayor proyecto es <b>mi autodesarrollo</b>
+                    </p>
+                </div>
+            </section>
+            <section class="projects">
+                <div class="container">
+                    <div class="projects__grid">
+
+                        <article class="projects__item">
+                            <img src="img/proyectoapp.jpg" class="projects__img">
+                            <div class="projects__hover">
+                                <h2 class="projects__title">Proyecto App</h2>
+                                <i class="far fa-file-alt projects__icon"></i>
+                            </div>
+                        </article>
+
+                        <article class="projects__item">
+                            <img src="img/proyectoempresa.jpg" class="projects__img">
+                            <div class="projects__hover">
+                                <h2 class="projects__title">Proyecto Empresa</h2>
+                                <i class="far fa-file-alt projects__icon"></i>
+                            </div>
+                        </article>
+
+                        <article class="projects__item">
+                            <img src="img/proyectoinversion.jpg" class="projects__img">
+                            <div class="projects__hover">
+                                <h2 class="projects__title">Proyecto Inversión</h2>
+                                <i class="far fa-file-alt projects__icon"></i>
+                            </div>
+                        </article>
+
+                        <article class="projects__item">
+                            <img src="img/proyectoyo.jpeg" class="projects__img">
+                            <div class="projects__hover">
+                                <h2 class="projects__title">Proyecto Yo</h2>
+                                <i class="far fa-file-alt projects__icon"></i>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+            <section class="like container">
+                <h2 class="subtitle">Lo que me gusta</h2>
+
+                <div class="like__grid">
+
+                    <article class="like__item">
+                        <div class="like__it">
+                            <img src="img/billar.jpg"class="like__img">
+                            <div class="like_text">
+                                <h3 class="like__name">El Billar</h3>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="like__item">
+                        <div class="like__it">
+                            <img src="img/box.jpg"class="like__img">
+                            <div class="like_text">
+                                <h3 class="like__name">El boxeo</h3>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="like__item">
+                        <div class="like__it">
+                            <img src="img/cubo.jpeg"class="like__img">
+                            <div class="like_text">
+                                <h3 class="like__name">Los cubos rubik</h3>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="like__item">
+                        <div class="like__it">
+                            <img src="img/foto.jpeg"class="like__img">
+                            <div class="like_text">
+                                <h3 class="like__name">La fotografía</h3>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="like__item">
+                        <div class="like__it">
+                            <img src="img/guitarra.jpg"class="like__img">
+                            <div class="like_text">
+                                <h3 class="like__name">La guitarra</h3>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="like__item">
+                        <div class="like__it">
+                            <img src="img/helado.jpeg"class="like__img">
+                            <div class="like_text">
+                                <h3 class="like__name">El helado</h3>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__grid">
+                    <p class="copy__footer">© Creado por Miguel Alayo</p>
+                    <section class="footer__contact">
+                        <h3 class="footer__title">Contáctame</h3>
+                        <div class="footer__icons">
+                            <span class="footer__container-icons">
+                                <a class="fab fa-facebook footer__icon" href="https://www.facebook.com/miguel.alayoorozco"></a>                       
+                             </span>
+                           
+                            <span class="footer__container-icons">
+                                <a class="fab fa-whatsapp footer__icon" href="http://wa.me/51968315796?text=Hola%20Migue"></a>
+                            </span>
+                           
+                            <span class="footer__container-icons">
+                                <a class="fab fa-google footer__icon" href=" mailto:miguelalayo@outlook.com"></a>
+                            </span>
+                        </div>
+                    </section>
+            </div>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/ac64455b97.js" crossorigin="anonymous"></script>
     </body>
 </html>
