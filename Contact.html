@@ -21,13 +21,15 @@
                       <div class="navbar-nav ms-auto">
                         <a class="nav-link px-5" href="index.html">INICIO</a>
                         <a class="nav-link px-4" href="About.html">ACERCA DE MÍ</a>
-                        <a class="nav-link active px-4" aria-current="page" href="Contact.html">CONTÁCTAME</a>
+                        <a class="nav-link fw-bold active px-4" aria-current="page" href="Contact.html">CONTÁCTAME</a>
                       </div>
                     </div>
                 </div>
             </nav>
-            <div class="container vh-100 "> 
-                <h1 class="hero__title fw-bold text-white">CONTÁCTAME</h1>
+            <div class="container vh-100 position-relative"> 
+                <div class="position-absolute top-50 start-0 translate-middle-y">
+                    <h1 class="fs-1 fw-bold text-white">CONTÁCTAME</h1>
+                </div>
             </div>
             <div class="hero__wave" style="overflow: hidden;" >
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
@@ -38,49 +40,27 @@
         </header>
 
         <main>
-            <section class="contact container">
-                <div class="contact__grid">
-                    <article class="contact__item">
-                        <div class="contact__it">
-                            <a href="https://www.facebook.com/miguel.alayoorozco"><img src="img/facebook.svg" width="90"></a>
-                            <div class="like_text">
-                                <h3 class="contact__name">Facebook</h3>
-                            </div>
-                        </div>
-                    </article>
-        
-                    <article class="contact__item">
-                        <div class="contact__it">
-                            <a href="http://wa.me/51968315796?text=Hola%20Migue"><img src="img/whatsapp.svg" width="90"></a>
-                            <div class="contact__text">
-                                <h3 class="contact__name">Whatsapp</h3>
-                            </div>
-                        </div>
-                    </article>
-        
-                    <article class="contact__item">
-                        <div class="contact__it">
-                            <a href=" mailto:miguelalayo@outlook.com"><img src="img/gmail.svg" width="90"></a>
-                            <div class="contact__text">
-                                <h3 class="contact__name">Gmail</h3>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
+            <div class="container-fluid float-start w-25 p-0">
+                <ul class="nav flex-column">
+                    <li class="sli nav-item py-2 my-2 w-50"><a class="sa ps-3 fs-6 fw-bold text-white" href="">Google</a><i class="fab fa-google google p-1 p-sm-2 fs-4"></i></li>
+                    <li class="sli nav-item py-2 my-2 w-50"><a class="sa ps-3 fs-6 fw-bold text-white" href="">Whatsapp</a><i class="fab fa-whatsapp whatsapp p-2 fs-4"></i></li>
+                    <li class="sli nav-item py-2 my-2 w-50"><a class="sa ps-3 fs-6 fw-bold text-white" href="">Facebook</a><i class="fab fa-facebook facebook p-2 fs-4"></i></li>
+                    <li class="sli nav-item py-2 my-2 w-50"><a class="sa ps-3 fs-6 fw-bold text-white" href="">Instagram</a><i class="fab fa-instagram instagram p-2 fs-4"></i></li>
+                </ul>
+            </div>
             <section class="container">
-                <hr>
                 <h2 class="subtitle">Conctáctame</h2>
-                <form class="form" action="MAILTO:sugerencias@miempresa.com" method="post" enctype="text/plain">
-                    Nombre:<br>
-                    <input type="text" name="name" value="tu nombre"><br>
-                    E-mail:<br>
-                    <input type="text" name="mail" value="tu email"><br>
-                    Sugerencia:<br>
-                    <input type="text" name="comment" value="Tus sugerencias" size="50"><br><br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
-                </form>
+                <div class="container form">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">ENVIAR</button>
+                </div>
             </section>
         </main>
 
