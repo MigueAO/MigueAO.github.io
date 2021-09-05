@@ -1,0 +1,27 @@
+body{
+    background-color: #C9F2E3;
+}
+
+.input-group-text{
+    color: #fff;
+}
+
+.btn{
+    color: white;
+}
+
+#btnExtraer{
+    background: #F2911B;
+}
+
+#btnColorear{
+    background: #BF471B;
+}
+
+.azul{
+    background: #1F72A6;
+}
+
+.rojo{
+    background: #BF471B;
+}

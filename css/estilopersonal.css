@@ -42,10 +42,11 @@ body{
     background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
 }
 
-.btn{
+.btn__contact{
     background: #fff;
     border-color: #764ba2;
     color: var(--color-primary);
+    padding: 10px 20px;
     border-radius: 40px;
 }
 
@@ -110,14 +111,9 @@ i{
 
 /*About*/
 
-.presentation{
-    padding-top: 0;
-    text-align: center;
-}
-
 .presentation__picture{
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     margin-bottom: 10px;
     object-fit: cover;
@@ -129,13 +125,11 @@ i{
     margin: 0 auto;
 }
 
-.presentation__cta{
-    display: inline-block;
-    margin-top: 30px;
+.btn__me{
     background: var(--color-primary);
     color: #fff;
-    text-decoration: none;
-    padding: var(--boton-padding);
+    border-color: var(--color-primary);
+    padding: 10px 20px;
     border-radius: 40px;
 }
 

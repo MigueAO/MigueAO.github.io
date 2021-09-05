@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 05</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lab05.css">
+</head>
+<body>
+    
+    <header class="container">
+        <div class="row">
+            <div class="col pt-4 pt-sm-3 text-center">
+                <h1 class="fs-3 fw-bold">LAB 05: TALLER DE JAVASCRIPT</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row my-5">
+            <div class="col-md-6">
+                <form action="">
+                    <div class="input-group mb-2">
+                        <span class="input-group-text col-4 azul">Apellidos y nombres:</span>
+                        <input id="inpNomApe" type="text" class="form-control" placeholder="Ingreso apellidos y nombres" name="nombre">
+                    </div>
+
+                    <div class="input-group mb-2">
+                        <span class="input-group-text col-4 azul">Fecha de nacimiento:</span>
+                        <input id="inpFNac" type="date" class="form-control fw-light" name="apellido">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="col-6 d-grid mx-auto">
+                    <button id="btnExtraer" class="btn mb-2" type="button">Extraer</button>
+                    <button id="btnColorear" class="btn mb-2" type="button">Colorear</button>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-md-6">
+                <div class="input-group mb-2">
+                    <span class="input-group-text col-5 azul">Apellido paterno:</span>
+                    <input id="inpApPat" type="text" class="form-control" name="nombre">
+                </div>
+                <div class="input-group mb-2">
+                    <span class="input-group-text col-5 azul">Apellido materno:</span>
+                    <input id="inpApMat" type="text" class="form-control" name="nombre">
+                </div>
+                <div class="input-group mb-2">
+                    <span class="input-group-text col-5 azul">Nombres:</span>
+                    <input id="inpNom" type="text" class="form-control" name="nombre">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group mb-2">
+                    <span class="input-group-text col-5 rojo">Longitud del apellido:</span>
+                    <input id="inpLongApe" type="text" class="form-control" name="nombre">
+                </div>
+                <div class="input-group mb-2">
+                    <span class="input-group-text col-5 rojo">Edad:</span>
+                    <input id="inpEdad" type="text" class="form-control" name="nombre">
+                </div>
+                <div class="input-group mb-2">
+                    <span class="input-group-text col-5 rojo">Mes en letras:</span>
+                    <input id="inpMes" type="text" class="form-control" name="nombre">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/lab05.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+</html>
