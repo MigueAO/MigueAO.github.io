@@ -19,7 +19,7 @@
             function obtenerNombres(arrayName){
                 let nombres = [];
                  for(let i=2; i<=arrayName.length-1; i++){
-                     nombres.push(arrayName[2]);
+                     nombres.push(arrayName[i]);
                     } return nombres.join(" ");
             }
             
